@@ -17,13 +17,13 @@
             font-family: 'Roboto', sans-serif;
             scroll-behavior: smooth;
         }
+        /* NOVA PALETA DE CORES BASEADA NA LOGO */
         :root {
             --color-orange: #F97316;
             --color-indigo: #6366F1;
             --color-teal: #14B8A6;
-            --color-dark-bg: #111827;
-            --color-dark-card: #1F2937;
-            --color-dark-border: #374151;
+            --color-dark-bg: #111827; /* Mantido para contraste */
+            --color-dark-card: #1F2937; /* Mantido para contraste */
         }
         .text-shadow { text-shadow: 2px 2px 8px rgba(0,0,0,0.7); }
         
@@ -39,10 +39,7 @@
                 radial-gradient(ellipse 80% 50% at 50% -20%, rgba(249, 115, 22, 0.15), transparent),
                 radial-gradient(ellipse 80% 50% at 50% 120%, rgba(99, 102, 241, 0.1), transparent);
         }
-        .card-glow {
-             background-image: radial-gradient(circle 500px at 50% 200px, rgba(249, 115, 22, 0.08), transparent);
-        }
-        /* Efeito de borda gradiente */
+        
         .gradient-border {
             transition: all 0.3s ease-in-out;
         }
@@ -55,10 +52,9 @@
 <body class="bg-[var(--color-dark-bg)] text-white">
 
     <header class="bg-[var(--color-dark-card)]/80 backdrop-blur-sm sticky top-0 z-50 border-b border-white/10">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-baseline cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
-                <span class="text-2xl font-bold text-[var(--color-orange)]">Smart</span>
-                <span class="text-2xl font-light text-white">Fridge</span>
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+                <img src="logo.png" alt="SmartFridge Logo" class="h-10">
             </div>
             <a href="#contato" class="bg-[var(--color-orange)] hover:bg-orange-600 text-white font-bold py-2 px-5 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-orange-500/20">
                 Fale Conosco
@@ -102,12 +98,12 @@
                              </ul>
                         </div>
 
-                        <a href="https://wa.me/5561982037442?text=Olá!%20Sou%20síndico(a)%20e%20tenho%20interesse%20na%20parceria%20SmartFridge%20a%20custo%20zero%20para%20meu%20condomínio." target="_blank" class="mt-10 inline-flex items-center gap-3 bg-[var(--color-teal)] hover:bg-teal-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-xl shadow-teal-500/20">
+                        <a href="https://wa.me/SEUNUMERO?text=Olá!%20Sou%20síndico(a)%20e%20tenho%20interesse%20na%20parceria%20SmartFridge%20a%20custo%20zero%20para%20meu%20condomínio." target="_blank" class="mt-10 inline-flex items-center gap-3 bg-[var(--color-teal)] hover:bg-teal-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-xl shadow-teal-500/20">
                             <i data-lucide="whatsapp"></i> Falar com um especialista
                         </a>
                     </div>
                      <div class="fade-in-up" style="animation-delay: 0.2s;">
-                         <img src="https://www.direcional.com.br/wp-content/uploads/2021/12/Acesso_Conquista-Maria-Paula_direcional.jpg" alt="Lobby de condomínio moderno" class="rounded-2xl shadow-2xl w-full h-full object-cover">
+                         <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Lobby de condomínio moderno" class="rounded-2xl shadow-2xl w-full h-full object-cover">
                      </div>
                  </div>
             </div>
@@ -122,24 +118,24 @@
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-7xl mx-auto items-stretch">
                     
                     <div class="p-1 bg-gradient-to-br from-[var(--color-orange)] to-orange-800 rounded-2xl gradient-border">
-                        <div class="bg-[var(--color-dark-bg)] rounded-xl p-8 flex flex-col h-full relative card-glow">
-                             <div class="absolute top-0 right-0 bg-[var(--color-orange)] text-white text-sm font-bold px-6 py-1 rounded-bl-lg">Mais Popular</div>
-                            <h3 class="text-2xl font-bold text-center">Plano Standard</h3>
-                            <p class="text-center text-gray-400 mt-1">A solução completa com geladeira inclusa.</p>
-                            <img src="https://i.imgur.com/6TVB0Gd.png" alt="Geladeira SmartFridge" class="my-6 rounded-lg">
+                        <div class="bg-[var(--color-dark-bg)] rounded-xl p-8 flex flex-col h-full relative">
+                             <div class="absolute top-0 right-0 bg-[var(--color-orange)] text-black text-sm font-bold px-6 py-1 rounded-bl-lg">Mais Popular</div>
+                            <h3 class="text-2xl font-bold text-center">📦 Plano Standard</h3>
+                            <p class="text-center text-gray-400 mt-1">A solução completa e pronta para operar.</p>
+                            <img src="https://placehold.co/1200x800/111827/FFFFFF?text=Geladeira+Inclusa" alt="Geladeira SmartFridge" class="my-6 rounded-lg">
                             <div class="text-center my-4">
                                 <p class="text-gray-400">Instalação: <span class="line-through text-gray-500">R$1.500</span> <span class="font-bold text-white">R$ 1.200,00</span></p>
                                 <p class="text-4xl font-extrabold text-[var(--color-orange)] mt-2">R$ 850,00<span class="text-xl font-normal text-gray-400">/mês</span></p>
                             </div>
-                            <div class="border-t border-[var(--color-dark-border)] pt-6 mt-4 flex-grow">
+                            <div class="border-t border-white/10 pt-6 mt-4 flex-grow">
                                 <ul class="space-y-3 text-gray-300">
-                                    <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i> Geladeira Inteligente Inclusa</li>
-                                    <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i> Sistema Personalizado com sua Marca</li>
+                                    <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i> <span class="font-bold text-white">Geladeira + Sistema de Trava</span></li>
+                                    <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i> <span class="font-bold text-white">Site e App</span> com sua Marca</li>
                                     <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i> Gestão de Estoque e Financeira</li>
                                     <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i> Manutenção Gratuita e Suporte 24h</li>
                                 </ul>
                             </div>
-                            <a href="https://wa.me/5561982037442?text=Olá!%20Tenho%20interesse%20no%20Plano%20SmartFridge%20Standard." target="_blank" class="mt-8 w-full text-center bg-[var(--color-orange)] hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2">
+                            <a href="https://wa.me/SEUNUMERO?text=Olá!%20Tenho%20interesse%20no%20Plano%20SmartFridge%20Standard." target="_blank" class="mt-8 w-full text-center bg-[var(--color-orange)] hover:bg-orange-600 text-black font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2">
                                 <i data-lucide="whatsapp"></i> Quero o Plano Standard
                             </a>
                         </div>
@@ -147,14 +143,14 @@
 
                     <div class="p-1 bg-gradient-to-br from-[var(--color-teal)] to-teal-800 rounded-2xl gradient-border">
                         <div class="bg-[var(--color-dark-bg)] rounded-xl p-8 flex flex-col h-full">
-                            <h3 class="text-2xl font-bold text-center">Plano Sistema Próprio</h3>
+                            <h3 class="text-2xl font-bold text-center">🔌 Plano Sistema Próprio</h3>
                             <p class="text-center text-gray-400 mt-1">Já tem a geladeira? Alugue nossa tecnologia.</p>
-                            <img src="https://i.imgur.com/7m764Ua.png" alt="Tecnologia SmartFridge" class="my-6 rounded-lg">
+                            <img src="https://placehold.co/1200x800/111827/FFFFFF?text=Sua+Geladeira" alt="Tecnologia SmartFridge" class="my-6 rounded-lg">
                             <div class="text-center my-4">
                                 <p class="text-gray-400">Instalação: <span class="line-through text-gray-500">R$1.200</span> <span class="font-bold text-white">R$ 989,90</span></p>
                                 <p class="text-4xl font-extrabold text-[var(--color-teal)] mt-2">R$ 499,90<span class="text-xl font-normal text-gray-400">/mês</span></p>
                             </div>
-                            <div class="border-t border-[var(--color-dark-border)] pt-6 mt-4 flex-grow">
+                            <div class="border-t border-white/10 pt-6 mt-4 flex-grow">
                                 <ul class="space-y-3 text-gray-300">
                                     <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i> Tecnologia de Trava Inteligente</li>
                                     <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i> Plataforma Completa (Site e App)</li>
@@ -162,7 +158,7 @@
                                     <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i> Manutenção Gratuita e Suporte 24h</li>
                                 </ul>
                             </div>
-                            <a href="https://wa.me/5561982037442?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Plano%20Sistema%20Próprio." target="_blank" class="mt-8 w-full text-center bg-[var(--color-teal)] hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-teal-500/20 flex items-center justify-center gap-2">
+                            <a href="https://wa.me/SEUNUMERO?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Plano%20Sistema%20Próprio." target="_blank" class="mt-8 w-full text-center bg-[var(--color-teal)] hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-teal-500/20 flex items-center justify-center gap-2">
                                 <i data-lucide="whatsapp"></i> Contratar Sistema
                             </a>
                         </div>
@@ -170,14 +166,14 @@
                     
                     <div class="p-1 bg-gradient-to-br from-[var(--color-indigo)] to-indigo-800 rounded-2xl gradient-border">
                         <div class="bg-[var(--color-dark-bg)] rounded-xl p-8 flex flex-col h-full">
-                            <h3 class="text-2xl font-bold text-center">Plano Custom</h3>
+                            <h3 class="text-2xl font-bold text-center">🛠️ Plano Custom</h3>
                             <p class="text-center text-gray-400 mt-1">A solução escalável para grandes projetos.</p>
-                            <img src="https://i.imgur.com/VSOVwp0.png" alt="Várias geladeiras em rede" class="my-6 rounded-lg">
+                            <img src="https://placehold.co/1200x800/111827/FFFFFF?text=Grandes+Projetos" alt="Várias geladeiras em rede" class="my-6 rounded-lg">
                             <div class="text-center my-4 flex-grow flex flex-col justify-center">
                                 <p class="text-4xl font-extrabold text-[var(--color-indigo)]">Sob Consulta</p>
                                 <p class="text-gray-300 mt-4">Valores e estrutura definidos conforme as necessidades específicas do seu projeto em larga escala.</p>
                             </div>
-                            <div class="border-t border-[var(--color-dark-border)] pt-6 mt-4">
+                            <div class="border-t border-white/10 pt-6 mt-4">
                                 <h4 class="font-bold text-center mb-2">Ideal para Redes e Administradoras</h4>
                                 <ul class="space-y-3 text-gray-300 text-sm">
                                     <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i> Preços progressivos por volume</li>
@@ -185,7 +181,7 @@
                                     <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i> Manutenção Gratuita e Suporte Prioritário</li>
                                 </ul>
                             </div>
-                            <a href="https://wa.me/5561982037442?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20o%20Plano%20SmartFridge%20Custom." target="_blank" class="mt-8 w-full text-center bg-[var(--color-indigo)] hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-indigo-500/20 flex items-center justify-center gap-2">
+                            <a href="https://wa.me/SEUNUMERO?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20o%20Plano%20SmartFridge%20Custom." target="_blank" class="mt-8 w-full text-center bg-[var(--color-indigo)] hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-indigo-500/20 flex items-center justify-center gap-2">
                                 <i data-lucide="whatsapp"></i> Solicitar Orçamento
                             </a>
                         </div>
@@ -198,7 +194,7 @@
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold">Vamos transformar a conveniência juntos?</h2>
                 <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Nossa equipe está pronta para entender suas necessidades e mostrar como a SmartFridge pode gerar mais receita e satisfação para seus clientes, moradores e colaboradores.</p>
-                <a href="https://wa.me/5561982037442?text=Olá!%20Gostaria%20de%20agendar%20uma%20demonstração%20da%20solução%20SmartFridge." target="_blank" class="mt-8 inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 md:py-4 md:px-10 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-xl shadow-green-500/20">
+                <a href="https://wa.me/SEUNUMERO?text=Olá!%20Gostaria%20de%20agendar%20uma%20demonstração%20da%20solução%20SmartFridge." target="_blank" class="mt-8 inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 md:py-4 md:px-10 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-xl shadow-green-500/20">
                     <i data-lucide="message-square"></i>
                     Agendar Demonstração via WhatsApp
                 </a>
@@ -208,9 +204,8 @@
 
     <footer class="bg-glow border-t border-white/10">
         <div class="container mx-auto px-6 py-8 text-center text-gray-400">
-            <div class="flex items-baseline justify-center mb-4">
-                <span class="text-xl font-bold text-[var(--color-orange)]">Smart</span>
-                <span class="text-xl font-light text-white">Fridge</span>
+            <div class="flex items-center justify-center mb-4">
+                 <img src="logo.png" alt="SmartFridge Logo" class="h-12">
             </div>
             <p>&copy; 2024 SmartFridge. Todos os direitos reservados.</p>
             <p class="text-sm mt-2">Tecnologia e conveniência para espaços modernos.</p>
